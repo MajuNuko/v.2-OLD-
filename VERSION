@@ -15,7 +15,7 @@
                             local DaHoodSettings = {
                                 SilentAim = true,
                                 AimLock = false,
-                                Prediction = 1.66,
+                                Prediction = 0.1,
                                 AimLockKeybind = Enum.KeyCode.E
                             }
                             getgenv().DaHoodSettings = DaHoodSettings
@@ -74,10 +74,3 @@
                                     CurrentCamera.CFrame = CFrame.lookAt(CurrentCamera.CFrame.Position, Hit.Position)
                                 end
                                 end)
-local player = game.Players.LocalPlayer
- 
-if player.Name == "ExoticPhas3" then
-    print("whitelisted")
-    else
-        player:Kick("Not" .. "WhitelistedMadebygrave")
-     end
